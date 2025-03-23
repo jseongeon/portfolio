@@ -9,28 +9,34 @@
 body {
   font-family: 'Noto Sans KR', sans-serif;
   background-color: #002B5B;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  background-repeat: repeat;
+  background-size: 300px 300px;
   color: white;
   line-height: 1.6;
 }
 
-.bg-pattern {
-  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
-  background-repeat: repeat;
-  background-size: 300px 300px;
+h1, h2, h3 {
+  font-weight: 700;
 }
 
-.section-title {
-  @apply text-center text-white font-extrabold text-4xl mb-2;
+.chart-bar {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  justify-content: center;
+  height: 180px;
 }
 
-.sub-title {
-  @apply text-center text-red-500 font-bold text-xl mb-6;
+.chart-bar div {
+  width: 20px;
+  background-color: white;
 }
 
-.text-box {
-  @apply bg-[#003366] text-white text-xl font-bold px-6 py-10 rounded text-center;
-}
-
-.flex-chart-bar {
-  @apply flex items-end gap-4 w-full justify-center;
+.pie-chart {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: conic-gradient(#3B82F6 0% 78%, #E5E7EB 78% 100%);
+  margin: 0 auto;
 }

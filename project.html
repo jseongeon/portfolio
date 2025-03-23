@@ -1,101 +1,136 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <title>3천만 관중 기획 페이지</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="project.css" />
-  </head>
-  <body class="bg-pattern">
-    <div class="max-w-[1080px] mx-auto px-6 py-10 space-y-20">
+<head>
+  <meta charset="UTF-8">
+  <title>3천만 관중 기획</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <div class="max-w-[1080px] mx-auto py-10 px-4 space-y-12">
 
-      <!-- 타이틀 -->
-      <section class="text-center space-y-2">
-        <h1 class="text-4xl font-extrabold text-white">3천만의 항해</h1>
-        <p class="text-red-500 text-xl font-bold">롯데와 함께 만들어온 성과</p>
-        <p class="text-sm text-white mt-2">To.G</p>
-      </section>
+    <!-- 타이틀 -->
+    <section class="text-center space-y-2">
+      <h1 class="text-4xl font-extrabold">3천만의 <span class="text-red-500">항해</span></h1>
+      <p class="text-blue-300">롯데와 함께 만들어온 성과</p>
+      <p class="mt-2">To.G</p>
+    </section>
 
-      <!-- 목차 -->
-      <section class="text-center">
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-white text-sm font-semibold leading-relaxed">
-          <div><p>01 구단 운영사항</p></div>
-          <div><p>02 상황분석</p></div>
-          <div><p>03 마케팅 목표</p></div>
-          <div><p>04 마케팅 전략</p></div>
-          <div><p>05 이벤트</p></div>
-          <div><p>06 활용사항</p></div>
+    <!-- 목차 -->
+    <section class="grid grid-cols-2 md:grid-cols-3 text-center gap-6 text-white font-medium text-sm">
+      <div>
+        <p class="text-sm font-bold">01</p>
+        <p>구단 운영사항</p>
+      </div>
+      <div>
+        <p class="text-sm font-bold">02</p>
+        <p>상황분석</p>
+      </div>
+      <div>
+        <p class="text-sm font-bold">03</p>
+        <p>마케팅 목표</p>
+      </div>
+      <div>
+        <p class="text-sm font-bold">04</p>
+        <p>마케팅 전략</p>
+      </div>
+      <div>
+        <p class="text-sm font-bold">05</p>
+        <p>이벤트</p>
+      </div>
+      <div>
+        <p class="text-sm font-bold">06</p>
+        <p>활용사항</p>
+      </div>
+    </section>
+
+    <!-- 구단 운영사항 + 미션 -->
+    <section class="text-center space-y-2">
+      <p class="text-white font-semibold">구단 운영사항</p>
+      <div class="text-white">
+        <p class="text-lg font-bold">3천만 관중 기념 시리즈 경기 행사 및 경기 이벤트 기획</p>
+        <p class="text-sm text-gray-300">관중 데이터 기반 + 타겟 팬층 재정의</p>
+      </div>
+    </section>
+
+    <!-- 반원 차트 -->
+    <section class="flex justify-center gap-8 items-end text-center">
+      <div>
+        <div class="w-32 h-16 bg-white rounded-t-full"></div>
+        <p class="text-sm mt-2">1,590,000</p>
+        <p class="text-xs text-gray-300">21년 ~ 23년 누적 유료관중</p>
+      </div>
+      <div>
+        <div class="w-32 h-28 bg-blue-400 rounded-t-full"></div>
+        <p class="text-sm mt-2">29,286,058</p>
+        <p class="text-xs text-gray-300">KBO 리그 누적 관중 수</p>
+      </div>
+    </section>
+
+    <!-- 문제제기 도식 -->
+    <section class="relative flex justify-center mt-12">
+      <div class="absolute w-28 h-28 bg-white text-black rounded-full flex items-center justify-center left-1/2 -translate-x-1/2 z-30 font-bold">남문</div>
+      <div class="absolute w-28 h-28 bg-white text-black rounded-full flex items-center justify-center left-[35%] -translate-x-1/2 z-20 font-bold">전통현대</div>
+      <div class="absolute w-28 h-28 bg-white text-black rounded-full flex items-center justify-center left-[65%] -translate-x-1/2 z-20 font-bold">역사</div>
+    </section>
+
+    <!-- 관중비교 그래프 -->
+    <section class="text-center">
+      <h2 class="text-lg font-bold">상황분석 - 타구단 관중 비교</h2>
+      <div class="chart-bar mt-4">
+        <div style="height: 40%"></div>
+        <div style="height: 60%"></div>
+        <div style="height: 30%"></div>
+        <div class="bg-red-500" style="height: 80%"></div>
+      </div>
+      <p class="text-red-500 font-bold text-lg mt-2">19.7%</p>
+    </section>
+
+    <!-- 이탈 위험률 -->
+    <section class="text-center">
+      <h2 class="text-lg font-bold">상황분석 - 이탈위험률</h2>
+      <p class="text-red-500 text-3xl font-bold mt-2">71.9%</p>
+    </section>
+
+    <!-- 관람요인 가로바 -->
+    <section class="text-center">
+      <h2 class="text-lg font-bold">상황분석 - 관람요인</h2>
+      <div class="flex flex-col items-center space-y-2 mt-2">
+        <div class="w-2/3 h-6 bg-gray-200 rounded">
+          <div class="w-[38%] h-full bg-red-500 rounded"></div>
         </div>
-      </section>
+        <p class="text-red-500 text-sm font-bold">37.8%</p>
+      </div>
+    </section>
 
-      <!-- 구단 운영사항 -->
-      <section>
-        <div class="text-box">구단 운영사항</div>
-      </section>
+    <!-- 파이 차트 -->
+    <section class="text-center">
+      <h2 class="text-lg font-bold">상황분석 - 전체 중 의향 팬 비율</h2>
+      <div class="pie-chart mt-4"></div>
+      <p class="text-red-500 font-bold mt-2">의향있음 78.0%</p>
+    </section>
 
-      <!-- 구단 효과사항 -->
-      <section>
-        <div class="text-box">구단 효과사항</div>
-      </section>
-
-      <!-- 문제정리 도식 -->
-      <section class="text-center">
-        <div class="flex justify-center gap-4 items-center">
-          <div class="w-32 h-32 rounded-full border-4 border-white flex items-center justify-center">전통현대</div>
-          <div class="w-32 h-32 rounded-full border-4 border-white flex items-center justify-center">남문</div>
-          <div class="w-32 h-32 rounded-full border-4 border-white flex items-center justify-center">역사</div>
+    <!-- 팬데이터 수치 -->
+    <section class="text-center">
+      <h2 class="text-lg font-bold">상황분석 - 팬데이터 분석</h2>
+      <div class="flex justify-center gap-10 mt-4">
+        <div>
+          <p class="text-2xl font-bold">52,768</p>
+          <p class="text-sm">실 관람 관객</p>
         </div>
-      </section>
-
-      <!-- 관중 비교 차트 -->
-      <section class="text-center">
-        <h2 class="text-xl font-bold text-white mb-4">상황분석 - 타구단 관중비교</h2>
-        <div class="flex-chart-bar h-40">
-          <div class="w-8 bg-white" style="height: 50%;"></div>
-          <div class="w-8 bg-white" style="height: 70%;"></div>
-          <div class="w-8 bg-white" style="height: 40%;"></div>
-          <div class="w-8 bg-red-500" style="height: 80%;"></div>
+        <div>
+          <p class="text-2xl font-bold text-red-500">70,700</p>
+          <p class="text-sm">이탈 팬 수</p>
         </div>
-        <p class="text-red-500 text-lg font-bold mt-4">19.7%</p>
-      </section>
+      </div>
+    </section>
 
-      <!-- 이탈 위험군 차트 -->
-      <section class="text-center">
-        <h2 class="text-xl font-bold text-white mb-4">상황분석 - 이탈위험군</h2>
-        <p class="text-red-500 text-2xl font-extrabold">71.9%</p>
-      </section>
+    <!-- 마케팅 목표 -->
+    <section class="text-center space-y-2 mt-12">
+      <h2 class="text-red-500 text-lg font-bold">전 팬층이 참여할 수 있는 이벤트</h2>
+      <p class="text-sm">소홀해진 <span class="text-red-500 font-bold">롯데팬과 접점</span>을 늘리기 위한 이벤트도 기획</p>
+    </section>
 
-      <!-- 관람요인 가로바 -->
-      <section class="text-center">
-        <h2 class="text-xl font-bold text-white mb-4">상황분석 - 관람요인</h2>
-        <div class="flex flex-col items-center space-y-2">
-          <div class="w-2/3 h-6 bg-gray-300 rounded"><div class="w-[38%] h-full bg-red-500 rounded"></div></div>
-          <p class="text-red-500 text-sm">37.8%</p>
-        </div>
-      </section>
-
-      <!-- 팬데이터 숫자 카드 -->
-      <section class="text-center">
-        <h2 class="text-xl font-bold text-white mb-4">상황분석 - 팬데이터 분석</h2>
-        <div class="flex justify-center gap-10">
-          <div>
-            <p class="text-2xl font-bold">52,768</p>
-            <p class="text-sm">실 관람 관객</p>
-          </div>
-          <div>
-            <p class="text-2xl font-bold text-red-500">70,700</p>
-            <p class="text-sm">이탈 가능 팬 수</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- 파이널 메시지 -->
-      <section class="text-center space-y-3">
-        <h2 class="text-red-500 text-lg font-bold">전 팬층이 참여할 수 있는 이벤트</h2>
-        <p class="text-sm text-white">소홀해진 롯데팬과 접점을 늘리기 위한 이벤트도 기획</p>
-        <div class="text-box bg-red-600">파워풀 목표</div>
-      </section>
-
-    </div>
-  </body>
+  </div>
+</body>
 </html>
