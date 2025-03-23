@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeong Seongeon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css"> <!-- CSS 파일 연결 -->
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <nav class="nav">
+        <div class="logo">Jeong Seongeon</div>
+        <div class="menu">
+            <a href="#">Army</a>
+            <a href="#">Marketer</a>
+            <a href="#">Project</a>
+            <a href="#">Galley</a>
+        </div>
+        <!-- 모바일 메뉴 버튼 -->
+        <button class="mobile-menu-btn" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+    <div class="mobile-menu hidden">
+        <a href="#">Army</a>
+        <a href="#">Marketer</a>
+        <a href="#">Project</a>
+        <a href="#">Galley</a>
+    </div>
+
+    <!-- 메인 레이아웃 -->
+    <div class="container">
+        <!-- 왼쪽 섹션 -->
+        <div class="left-section">
+            <h1>
+                <span class="text-gray">NO DOUBT,</span><br>
+                JUST DO IT
+            </h1>
+            <div class="icons">
+                <a href="tel:+821083001507" class="icon-link">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+                <a href="mailto:tjddjs1507@gmail.com" class="icon-link">
+                    <i class="fas fa-envelope"></i>
+                </a>    
+                <a href="http://github.com/tjddjs1507" target="_blank" class="icon-link">
+                    <i class="fas fa-code-branch"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- 오른쪽 섹션 -->
+        <div class="right-section">
+            <p class="description">
+                <span class="bold">background</span> 개인사진 넣고<br>
+                커서에 따라 사진이 보이게 애니메이션
+            </p>
+            <div class="profile-info">
+                <p class="name">JEONG SEONGEON</p>
+                <p class="birth">Birth. <span>1997. 10. 10</span></p>
+                <p class="gender">Gender. <span>male</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".mobile-menu").classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>

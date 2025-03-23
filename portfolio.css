@@ -1,0 +1,226 @@
+/* 전체 스타일 */
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 네비게이션 바 */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: black;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 기본 메뉴 */
+.menu {
+    display: flex;
+}
+
+.menu a {
+    color: white;
+    margin-left: 32px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* 모바일 메뉴 */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    text-align: center;
+    padding: 16px;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 메인 컨테이너 */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* 왼쪽 섹션 */
+.left-section {
+    width: 33%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px;
+}
+
+.left-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.icons {
+    margin-top: 32px;
+}
+
+.icons i {
+    font-size: 24px;
+    margin-right: 16px;
+}
+
+/* 오른쪽 섹션 */
+.right-section {
+    width: 67%;
+    background-color: #e5e5e5;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.description {
+    text-align: center;
+    font-size: 18px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.profile-info {
+    position: absolute;
+    bottom: 48px;
+    right: 48px;
+    text-align: right;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.birth, .gender {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.birth span, .gender span {
+    color: gray;
+}
+
+/* ✅ 반응형 스타일 */
+@media (max-width: 1024px) {
+    /* 태블릿 화면 */
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .profile-info {
+        position: static;
+        text-align: center;
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* 모바일 화면 */
+    .nav {
+        padding: 16px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        height: auto;
+        padding: 32px;
+    }
+
+    .left-section h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .icons {
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        /* gap: 50px; */
+        /* width: 100%; */
+    }
+
+    .icon-link {
+        color : whitesmoke;
+        font-size: 24px;
+        text-decoration: none;
+        transition: color 0.3s; ease-in-out;
+    }
+    
+    .icon-link:hover {
+        color: #00aaff;
+        cursor: pointer;
+    }
+    .icons i {
+        font-size: 20px;
+        margin: 0 12px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .profile-info {
+        text-align: center;
+        margin-top: 16px;
+    }
+}
